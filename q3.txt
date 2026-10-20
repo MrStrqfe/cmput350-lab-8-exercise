@@ -1,2 +1,8 @@
 1) mTransform is the best candidate to extract into a separate ECS
-component. Spatial
+component. Spatial data like position and scale is needed by many non-sprite
+entities such as cameras, and collision.
+
+2) I need to track the depth (Z-order) of the sprites and sort them so that we render
+them in back-to-front order. This ensures the background and further sprites are
+already drawn into the destination buffer before closer source sprites are
+alpha-blended on top of them.

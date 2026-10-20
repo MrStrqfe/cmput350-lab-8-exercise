@@ -1,0 +1,2 @@
+1) mTransform is the best candidate to extract into a separate ECS
+component. Spatial
